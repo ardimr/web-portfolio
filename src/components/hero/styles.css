@@ -1,0 +1,45 @@
+.container {
+  /* justify-self: center; */
+  display: flex;
+  width: 1440px;
+  padding: 25px 270px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  align-self: stretch;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.title {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title div {
+  color: var(--Chinese-Black, #111);
+  /* font-family: Inter; */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-cta {
+  display: flex;
+  width: 465px;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+}

@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  padding: 36px 32px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.container .logo {
+  color: var(--Chinese-Black, #111);
+  text-align: center;
+  /* font-family: Inter; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.navbar{
+  display: flex;
+  width: 620px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #000;
+  /* font-family: Inter; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

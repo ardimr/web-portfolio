@@ -1,0 +1,12 @@
+.tech-stack-icon{
+  display: flex;
+  width: 56px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack-list{
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 26px;
+}
