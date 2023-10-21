@@ -1,7 +1,8 @@
 
 .button {
   display: flex;
-  width: 202px;
+  /* width: auto; */
+  min-width: 200px;
   padding: 10px 35px;
   justify-content: center;
   align-items: center;
@@ -9,7 +10,9 @@
 
   font-size: 24px;
   font-weight: '400';
-  word-wrap: 'break-word';
+  white-space: nowrap;
+  /* text-overflow: ellipsis; */
+  word-wrap: break-word;
 }
 
 .primary {

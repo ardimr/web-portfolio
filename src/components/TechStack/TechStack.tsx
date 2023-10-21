@@ -2,11 +2,13 @@ import React from 'react'
 
 interface Props {
   children?: React.ReactNode
+  src?: string
 }
-const TechStack = ({children}:Props) => {
+const TechStack = ({children, src}:Props) => {
   return (
     <div className='tech-stack-icon'>
-      {children}
+      <img src={src} />
+      {/* {children} */}
     </div>
   )
 }

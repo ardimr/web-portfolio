@@ -5,8 +5,16 @@
   align-items: center;
 }
 
+.tech-stack-icon img{
+  width: 100%;
+}
+
 .tech-stack-list{
-  display: inline-flex;
-  align-items: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 26px;
+  flex-wrap: wrap;
 }

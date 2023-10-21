@@ -1,22 +1,43 @@
+"use client"
 import React from 'react'
 import './styles.css'
 import Separator from '../separator/Separator'
 import Button from '../button/Button'
 
+
+
 const HeroContent = () => {
+  const smoothScroll = (target:string) => {
+    const element = document.querySelector(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.log("element not found")
+    }
+  };
+
   return (
     <div className='wrapper'>
+      <img src="/me-2.jpg" style={{borderRadius:"50%", width:"250px", height:"250px"}}/>
       <div className='title'>
-        <div>Developer Name</div>
+        <div>Rizky Ardi Maulana</div>
       </div>
       <Separator/>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada
+        Hello! I'm Ardi👋, a passionate software engineer with a strong focus on backend development and a deep fascination for computer vision technologies. I thrive on turning innovative ideas into functional and user-friendly software solutions. My goal is to make a positive impact on the world through technology.
       </div>
 
       <div className='hero-cta'>
-        <Button butonType='secondary'>Projects</Button>
-        <Button butonType='primary'>Projects</Button>
+        <a
+          href={'/cv.pdf'}
+          download="Rizky Ardi Maulana"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button butonType='secondary'>Download CV</Button>
+        </a>
+        <Button butonType='primary' onClick={() => smoothScroll('#projects')}>Projects</Button>
+        
       </div>
 
     </div>
@@ -25,7 +46,7 @@ const HeroContent = () => {
 
 const Hero = () => {
   return  (
-    <div className='container'>
+    <div id = 'hero' className='container'>
       <HeroContent />
     </div>
   )
