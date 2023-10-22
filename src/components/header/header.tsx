@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
-import styles from './styles.module.css'
 import Button from '../button/Button'
+
+import './styles.css'
 
 const Header = () => {
   const smoothScroll = (target:string) => {
@@ -12,11 +13,11 @@ const Header = () => {
   };
 
   return (
-    <div className={styles['container']}>
-      <div className={styles['logo']}>
+    <div className='container'>
+      <div className='logo'>
         ARDIMR
       </div>
-      <nav className={styles['navbar']}>
+      <nav className='navbar'>
         <ul>
           <li>
             <a onClick={()=>smoothScroll('#hero')} href='#hero'>Home</a>
@@ -28,7 +29,7 @@ const Header = () => {
             <a onClick={()=>smoothScroll('#projects') } href='#projects'>Projects</a>
           </li>
           <li>
-            <Button butonType='cta'>
+            <Button butonType='cta' onClick={()=>smoothScroll('#contact')}>
               Contact
             </Button>
           </li>
