@@ -36,10 +36,8 @@ const HeroContent = () => {
         >
           <Button butonType='secondary'>Download CV</Button>
         </a>
-        <Button butonType='primary' onClick={() => smoothScroll('#projects')}>Projects</Button>
-        
+        <Button butonType='primary' onClick={() => smoothScroll('#projects')}>Projects</Button>       
       </div>
-
     </div>
   )
 }

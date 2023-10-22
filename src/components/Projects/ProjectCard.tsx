@@ -23,7 +23,11 @@ const ProjectCard = ({
       <div className='wireframe-placeholder'>
         <img src={src}></img>
       </div>
-      <div className='heading-three'>{title}</div>
+      <div className='heading-three'>
+        <p>
+          {title}
+        </p>
+      </div>
       <div className='separator'>
         <div className='line'/>
       </div>
