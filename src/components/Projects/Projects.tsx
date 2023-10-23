@@ -13,6 +13,13 @@ const Projects = () => {
         <Separator/>
       </div>
       <div className='project-grid'>
+        <ProjectCard src='/train.png' title='Train Booking System' techStacks={['golang.svg', 'postgresql.svg', 'redis.svg']}>
+          <p>
+            The Train Booking System is a simple yet powerful application for managing train reservations and bookings. 
+            This application provides an easy and convenient way for users to search for available trains, book tickets, and manage their travel plans.
+            This application is inspired by KAI's booking system (Indonesian Railways Company).
+          </p>
+        </ProjectCard>
         <ProjectCard src='/ppe.jpg' title='Personal Protective Equipment Inspection' techStacks={['python.png', 'opencv.svg', 'pytorch.svg']}>
           <p>
             PPE is equipment that will protect the user against the risk of accidents or of adverse effects on health. 
