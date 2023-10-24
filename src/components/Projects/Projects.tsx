@@ -34,7 +34,13 @@ const Projects = () => {
             Dagozilla Soccer Robot is a mobile robot that can play soccer autonomously. The robot has holonomic movement and using sensors to get the environment (field) information. This robot relies on omnidirectional camera as the main sensor, supported by the other sensors such as rotary encoder and compass to recognize it’s position, orientation, velocity, and ball position. The robot also has dribbling and shooting shooting mechanism like a real footballer to create goals. In a national match, there are up to three robots can play together in a team using strategy.
           </p>
         </ProjectCard>
-        
+        <ProjectCard src='/mata-duitan.jpg' title='Mata Duitan Payment System' techStacks={['python.png']}>
+          <p>
+            e-wallet such as Paypal, Gopay, Link-Aja, and OVO is a growing digital payment. E-wallet uses the internet as a communication line. 
+            In order to fulfill Network Software Designing course final project, I and my teammate were inspired to create similar application. The application we designed is called “Mata Duitan” and is a simplified version of the existing e-wallet. 
+            The system designed will use a server as a payment data processor and the user who wants to make a transaction will be considered a client.
+          </p>
+        </ProjectCard>
         <ProjectCard src='/PCB.png' title='PCB Inspection' techStacks={['python.png', 'opencv.svg', 'pytorch.svg']}>
           <p>
             The main idea of defect detection is comparing the inspected PCB and the template PCB to determine if there are any errors in the PCB being inspected. 
