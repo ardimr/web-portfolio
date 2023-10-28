@@ -3,6 +3,27 @@
   width: 56px;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.tech-stack-icon .tooltip{
+  visibility: hidden;
+  width: fit-content;
+  background-color: black;
+  opacity: 70%;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  font-size: small;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.tech-stack-icon:hover .tooltip {
+  visibility: visible;
+  top: 105%
 }
 
 .tech-stack-icon img{

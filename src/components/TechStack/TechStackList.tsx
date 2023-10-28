@@ -5,21 +5,23 @@ import TechStack from './TechStack'
 const TechStackList = () => {
   return (
     <div className='tech-stack-list'>
-      <TechStack src='/golang.svg'/>
-      <TechStack src='/postgresql.svg'/>
-      <TechStack src='/mongodb.svg'/>
-      <TechStack src='/redis.svg'/>
-      <TechStack src='/rabbitmq.svg'/>
-      <TechStack src='/html5.png'/>
-      <TechStack src='/css.png'/>
-      <TechStack src='/nextjs.svg'/>
-      <TechStack src='/react.svg'/>
-      <TechStack src='/typescript.svg'/>
+      <TechStack name='Golang' src='/golang.svg'/>
+      <TechStack name='Python' src='/python.png'/>
+      <TechStack name='Typescript' src='/typescript.svg'/>
+      <TechStack name='PostgreSQL' src='/postgresql.svg'/>
+      <TechStack name='MongoDB' src='/mongodb.svg'/>
+      <TechStack name='Redis' src='/redis.svg'/>
+      <TechStack name='RabbitMQ' src='/rabbitmq.svg'/>
+      <TechStack name='NextJS' src='/nextjs.svg'/>
+      <TechStack name='React' src='/react.svg'/>
+      <TechStack name='HTML5' src='/html5.png'/>
+      <TechStack name='CSS' src='/css.png'/>
 
-      <TechStack src='/python.png'/>
-      <TechStack src='/pytorch.svg'/>
-      <TechStack src='/opencv.svg'/>
-      <TechStack src='/docker.svg'/>
+      <TechStack name='Pytorch' src='/pytorch.svg'/>
+      <TechStack name='OpenCV' src='/opencv.svg'/>
+      <TechStack name='Git' src='/git.svg'/>
+      <TechStack name='Docker' src='/docker.svg'/>
+      <TechStack name='NginX' src='/nginx.svg'/>
 
       {/* <TechStack>
       <TechStack> */}
