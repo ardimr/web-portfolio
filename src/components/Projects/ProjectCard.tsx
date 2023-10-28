@@ -4,18 +4,31 @@ import TechStackList from '../TechStack/TechStackList'
 import Image from 'next/image'
 import TechStack from '../TechStack/TechStack'
 
+export type TechStack = {
+  name: string
+  icon: string
+}
+
+export type ProjectLink = {
+  icon: string
+  type: string
+  uri: string
+}
+
 interface Props {
   children?: React.ReactNode
   src: string
   title: string
-  techStacks: string[]
+  techStacks?: TechStack[]
+  projectLinks? : ProjectLink[] 
 }
 
 const ProjectCard = ({
   children,
   src,
   title,
-  techStacks
+  techStacks,
+  projectLinks
 
 }:Props) => {
   return (
@@ -27,6 +40,23 @@ const ProjectCard = ({
         <p>
           {title}
         </p>
+        <div className='project-links'>
+          {projectLinks?.map((projectLink:ProjectLink) =>
+            (projectLink.type === 'url')
+            ? <a href={projectLink.uri} >
+              <img src={projectLink.icon} />
+              <span className='tooltip'>Visit github</span>
+              </a>
+            : <a href={projectLink.uri} 
+                download={title}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={projectLink.icon} />
+                <span className='tooltip'>Download the documentation</span>
+              </a>
+          )}
+        </div>
       </div>
       <div className='separator'>
         <div className='line'/>
@@ -35,12 +65,7 @@ const ProjectCard = ({
         {children}
       </div>
       <div style={{width:"100%", display:"flex", flexDirection:"row", gap:"25px", justifyContent:"center"}}>
-        {techStacks.map((techStack, index) => <TechStack key={index} src={techStack}/>)}
-      </div>
-      <div className='project-links'>
-        <a href='http://www.github.com/ardimr' >
-          <img src='/static/github-icon.png' />
-        </a>    
+        {techStacks?.map((techStack, index) => <TechStack key={index} name={techStack.name} src={techStack.icon}/>)}
       </div>
     </div>
   )
