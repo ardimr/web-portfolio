@@ -20,12 +20,12 @@ const HeroContent = () => {
     <div className='wrapper'>
       <img src="/me-2.jpg" style={{borderRadius:"50%", width:"250px", height:"250px"}}/>
       <div className='title'>
-        <div>Rizky Ardi Maulana</div>
+        Rizky Ardi Maulana
       </div>
       <Separator/>
-      <div>
+      <p>
         Hello! I'm Ardi👋, a passionate software engineer with a strong focus on backend development and a deep fascination for computer vision technologies. I thrive on turning innovative ideas into functional and user-friendly software solutions. My goal is to make a positive impact on the world through technology.
-      </div>
+      </p>
 
       <div className='hero-cta'>
         <a
