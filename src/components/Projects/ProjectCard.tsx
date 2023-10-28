@@ -43,11 +43,11 @@ const ProjectCard = ({
         <div className='project-links'>
           {projectLinks?.map((projectLink:ProjectLink) =>
             (projectLink.type === 'url')
-            ? <a href={projectLink.uri} >
+            ? <a key={projectLink.uri} href={projectLink.uri} >
               <img src={projectLink.icon} />
               <span className='tooltip'>Visit github</span>
               </a>
-            : <a href={projectLink.uri} 
+            : <a key = {projectLink.uri} href={projectLink.uri} 
                 download={title}
                 target="_blank"
                 rel="noreferrer"
