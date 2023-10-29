@@ -1,7 +1,7 @@
 /* .container {} */
 .project {
   display: flex;
-  padding: 25px 150px;
+  /* padding: 25px 150px; */
   flex-direction: column;
   align-items: center;
   gap: 25px;
@@ -13,8 +13,13 @@
   scroll-behavior: smooth;
 }
 
-.project-grid {
+.project .project-grid {
   display: flex;
+  /* min-width: fit-content; */
+  /* width: 50%; */
+  max-width: 100%;
+  /* width: 350px; */
+  /* width: 100%; */
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
@@ -32,7 +37,9 @@
 
 .project-card {
   display: flex;
-  width: 555px;
+  /* width: 50%; */
+  width: 100%;
+  max-width: 555px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -46,8 +53,9 @@
 
 .project-card .wireframe-placeholder{
   box-sizing: content-box;
+  /* max-width: 100%; */
   width: 100%;
-  height: 374px; 
+  max-height: 374px; 
   overflow: hidden;
   /* background-position: center center; */
   /* background: var(--Spanish-Grey, #9E9E9E); */
@@ -56,6 +64,7 @@
 .project-card .wireframe-placeholder img{
   min-width: 100%;
   min-height: 100%;
+  /* max-width: 100%; */
   background-position: center center;
   /* background: var(--Spanish-Grey, #9E9E9E); */
 }
@@ -66,7 +75,7 @@
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
-  width: 100%;
+  width: 50%;
 }
 
 .project-card .separator .line {
@@ -76,7 +85,8 @@
 
 .project-card .heading-three{
   display: flex;
-  flex-shrink: 0;
+  width: 100%;
+  /* flex-shrink: 0; */
 
   padding: 10px 0px;
   justify-content: space-between;
@@ -95,6 +105,7 @@
   line-height: normal;
 }
 .project-card .body{
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   padding: 10px 0px;

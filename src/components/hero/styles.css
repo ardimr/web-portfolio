@@ -9,10 +9,8 @@
 .wrapper .title {
   display: flex;
   padding: 10px 0px;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
-
+  text-align: center;
   color: var(--Chinese-Black, #111);
   /* font-family: Inter; */
   font-size: 48px;
@@ -33,10 +31,18 @@
 .wrapper p {
   text-align: justify;
 }
+
 .hero-cta {
   display: flex;
-  width: 465px;
+  /* width: 465px; */
   justify-content: center;
   align-items: center;
   gap: 61px;
+}
+
+@media (max-width:640px){
+  .hero-cta {
+    flex-direction: column;
+    row-gap: 12px;
+  }
 }
