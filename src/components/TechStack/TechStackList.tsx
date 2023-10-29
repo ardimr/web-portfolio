@@ -8,10 +8,13 @@ const TechStackList = () => {
       <TechStack name='Golang' src='/golang.svg'/>
       <TechStack name='Python' src='/python.png'/>
       <TechStack name='Typescript' src='/typescript.svg'/>
+
       <TechStack name='PostgreSQL' src='/postgresql.svg'/>
       <TechStack name='MongoDB' src='/mongodb.svg'/>
       <TechStack name='Redis' src='/redis.svg'/>
       <TechStack name='RabbitMQ' src='/rabbitmq.svg'/>
+      <TechStack name='Minio' src='/minio.svg'/>
+
       <TechStack name='NextJS' src='/nextjs.svg'/>
       <TechStack name='React' src='/react.svg'/>
       <TechStack name='HTML5' src='/html5.png'/>
