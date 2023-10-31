@@ -28,6 +28,9 @@
   display: none;
 }
 
+.navbar .navbar-toggle:hover{
+  cursor: pointer;
+}
 .navbar li {
   list-style-type: none;
   padding: 8px 16px;
@@ -54,11 +57,11 @@
     display: block;
     align-self: flex-end;
   }
+  
   .navbar .navbar-link{
     display: none;
     width: 100%;
     justify-content: center;
-    
     /* text-align: center; */
   }
 
