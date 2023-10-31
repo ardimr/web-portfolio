@@ -29,7 +29,7 @@ const HeroContent = () => {
 
       <div className='hero-cta'>
         <a
-          href={'/Resume_Rizky Ardi Maulana.pdf'}
+          href={`/document/Resume_Rizky Ardi Maulana.pdf`}
           download="Rizky Ardi Maulana"
           target="_blank"
           rel="noreferrer"

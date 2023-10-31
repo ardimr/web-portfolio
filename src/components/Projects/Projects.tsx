@@ -44,7 +44,10 @@ const Projects = () => {
             {name:"PostgreSQL", icon:"postgresql.svg"},
             {name:"OpenCV", icon:"opencv.svg"},
             {name:"Pytorch", icon:"pytorch.svg"}
-          ]} >
+          ]} 
+          projectLinks={[
+            {icon:"link.svg", type:"document", uri:"document/ppe.pdf"}
+          ]}>
           <p>
             {`PPE is equipment that will protect the user against the risk of accidents or of adverse effects on health. 
             It can include items such as safety helmets, gloves, eye protection, high-visibility clothing, safety footwear, safety harnesses and respiratory protective equipment (RPE).
@@ -58,7 +61,7 @@ const Projects = () => {
           src='/ta.png' 
           title='Moving Asset Tracking'
           projectLinks={[
-            {icon:"link.svg", type:"document", uri:"moving_asset_tracking.pdf"}
+            {icon:"link.svg", type:"document", uri:"document/moving_asset_tracking.pdf"}
           ]}
 
           >
@@ -82,7 +85,7 @@ const Projects = () => {
           ]}
           projectLinks={[
             {icon:"github-icon.svg", type:"url", uri:"https://github.com/ariefhirmanto/final-task-pplj"},
-            {icon:"link.svg", type:"document", uri:"mata_duitan.pdf"}
+            {icon:"link.svg", type:"document", uri:"document/mata_duitan.pdf"}
           ]}>
           <p>
             {`
@@ -111,7 +114,7 @@ const Projects = () => {
           src='/dagozilla.png' 
           title='Dagozilla Soccer Robot' 
           projectLinks={[
-            {icon:"link.svg", type:"document", uri:"dagozilla.pdf"}
+            {icon:"link.svg", type:"document", uri:"document/dagozilla.pdf"}
           ]} 
           >
           <p>
