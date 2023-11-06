@@ -22,7 +22,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Head >
             <title>
-              Ardi's Portfolio
+              {`Ardi's Portfolio`}
             </title>
           </Head>
           <header>
