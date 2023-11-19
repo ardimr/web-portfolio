@@ -102,7 +102,11 @@ const Projects = () => {
             {name:"Python", icon:"python.png"},
             {name:"Pytroch", icon:"pytorch.svg"},
             {name:"OpenCV", icon:"opencv.svg"},
-          ]} >
+          ]} 
+          projectLinks={[
+            {icon:"link.svg", type:'document', uri:"document/pcb_inspection.pdf"}
+          ]}
+          >
           <p>
             {`The main idea of defect detection is comparing the inspected PCB and the template PCB to determine if there are any errors in the PCB being inspected. 
             The detection method utilizes binarization image processing modules, morphological operations, and image mathematical operations. 
