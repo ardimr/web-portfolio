@@ -5,7 +5,7 @@ import TechStackList from '../TechStack/TechStackList'
 
 const About = () => {
   return (
-    <div id='about' className='container'>
+    <div id='about' className='container' style={{scrollMarginTop:"var(--scroll-margin-top)"}}>
       <div className='section-heading'>
         <div className='heading-two'>
           <p>About</p>

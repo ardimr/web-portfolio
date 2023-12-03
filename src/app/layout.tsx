@@ -20,21 +20,20 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body className={inter.className}>
-          <Head >
+          <Head>
             <title>
               {`Ardi's Portfolio`}
             </title>
           </Head>
-          <header>
+          <header style={{position:"fixed", width:"100%", top:"0px", backgroundColor:"white", zIndex:"2"}}>
             <Header/>
           </header>
-          <main>
+          <main style={{marginTop:'120px'}}>
             {children}
           </main>
           <footer>
             <Footer />
           </footer>
-
         </body>
     </html>
   )

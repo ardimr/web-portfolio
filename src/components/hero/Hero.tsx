@@ -44,7 +44,7 @@ const HeroContent = () => {
 
 const Hero = () => {
   return  (
-    <div id = 'hero' className='container'>
+    <div id = 'hero' className='container' style={{scrollMarginTop:"var(--scroll-margin-top)"}}>
       <HeroContent />
     </div>
   )
