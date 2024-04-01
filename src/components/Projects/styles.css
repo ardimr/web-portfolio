@@ -54,11 +54,14 @@
 }
 
 .project-card .wireframe-placeholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: content-box;
   /* max-width: 100%; */
   width: 100%;
-  /* min-height: 350px; */
-  max-height: 374px; 
+  min-height: 375px;
+  max-height: 375px; 
   overflow: hidden;
   /* background-position: center center; */
   /* background: var(--Spanish-Grey, #9E9E9E); */
@@ -68,7 +71,8 @@
   min-width: 100%;
   min-height: 100%;
   /* max-width: 100%; */
-  background-position: center center;
+  /* background-position: center center; */
+  object-fit: cover;
   /* background: var(--Spanish-Grey, #9E9E9E); */
 }
 
