@@ -15,6 +15,25 @@ const Projects = () => {
       </div>
       <div className='project-grid'>
         <ProjectCard 
+          src='/paveview.png' 
+          title='Paveview' 
+          techStacks={[
+            {name:"Golang", icon:"golang.svg"},
+            {name: "Python", icon:"python.png"},
+            {name:"PostgreSQL", icon:"postgresql.svg"},
+            {name:"Redis", icon:"redis.svg"},
+            {name:"OpenCV", icon:"opencv.svg"},
+            {name:"Pytorch", icon:"pytorch.svg"},
+            {name:"GCP", icon:"gcp.svg"}
+          ]} 
+          projectLinks={[
+            ]
+          }>
+          <p>
+            {`AI-based platform featuring Road Damage Detection (RDD) and Road Damage Evaluation (RDE), aligned with international standards such as the Pavement Condition Index (PCI) and Surface Distress Index (SDI).`}
+          </p>
+        </ProjectCard>
+        <ProjectCard 
           src='/train.png' 
           title='Train Booking System' 
           techStacks={[

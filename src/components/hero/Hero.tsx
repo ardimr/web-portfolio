@@ -30,13 +30,13 @@ const HeroContent = () => {
       <div className='hero-cta'>
         <a
           href={`/document/Resume_Rizky Ardi Maulana.pdf`}
-          download="Rizky Ardi Maulana"
+          // download="Rizky Ardi Maulana"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <Button butonType='secondary'>Download CV</Button>
         </a>
-        <Button butonType='primary' onClick={() => smoothScroll('#projects')}>Projects</Button>       
+        <Button butonType='secondary' onClick={() => smoothScroll('#projects')}>Projects</Button>       
       </div>
     </div>
   )
