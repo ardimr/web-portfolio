@@ -30,7 +30,7 @@ const Projects = () => {
             ]
           }>
           <p>
-            {`AI-based platform featuring Road Damage Detection (RDD) and Road Damage Evaluation (RDE), aligned with international standards such as the Pavement Condition Index (PCI) and Surface Distress Index (SDI).`}
+            {`AI-based platform featuring Road Damage Detection (RDD) and Road Damage Evaluation (RDE), aligned with international standards metrics.`}
           </p>
         </ProjectCard>
         <ProjectCard 
