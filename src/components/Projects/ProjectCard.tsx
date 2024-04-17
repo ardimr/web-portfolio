@@ -38,7 +38,7 @@ const ProjectCard = ({
       <div className='wireframe-placeholder' onClick={()=> router.push(`/myprojects/${title.toLowerCase().replaceAll(' ', '-')}`)}>
         <img src={src}></img>
       </div>
-      <div className='heading-three'>
+      <div className='heading-three' onClick={()=> router.push(`/myprojects/${title.toLowerCase().replaceAll(' ', '-')}`)}>
         <p>
           {title}
         </p>

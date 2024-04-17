@@ -68,6 +68,9 @@
   /* background: var(--Spanish-Grey, #9E9E9E); */
 }
 
+.project-card .wireframe-placeholder:hover{
+  cursor: pointer;
+}
 .project-card .wireframe-placeholder img{
   min-width: 100%;
   min-height: 100%;
@@ -104,6 +107,9 @@
   align-self: stretch;
 }
 
+.project-card .heading-three:hover{
+  cursor: pointer;
+}
 .project-card .heading-three p {
   color: var(--Chinese-Black, #111);
   /* font-family: Inter; */

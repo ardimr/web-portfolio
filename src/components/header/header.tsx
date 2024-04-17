@@ -41,9 +41,11 @@ const Header = () => {
             <a onClick={()=>smoothScroll('#projects') } href='/#projects'>Projects</a>
           </li>
           <li className={navbarLinkClass}>
-            <Button butonType='cta' onClick={()=>smoothScroll('#contact')}>
-              Contact
-            </Button>
+            <a href='/#contact'>
+              <Button butonType='cta' onClick={()=>smoothScroll('#contact')}>
+                Contact
+              </Button>
+            </a>
           </li>
         </ul>
         
