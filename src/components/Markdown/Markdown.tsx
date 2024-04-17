@@ -15,7 +15,7 @@ const MarkdownComponent: React.FC<Props> = ({filepath}) => {
       .then((text) => setMarkdown(text));
   }, []);
 
-  return <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]} children={markdown} />;
+  return <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>;
 };
 
 export default MarkdownComponent;
