@@ -3,6 +3,7 @@ import './styles.css'
 import TechStackList from '../TechStack/TechStackList'
 import Image from 'next/image'
 import TechStack from '../TechStack/TechStack'
+import { useRouter } from 'next/navigation'
 
 export type TechStack = {
   name: string
@@ -31,9 +32,10 @@ const ProjectCard = ({
   projectLinks
 
 }:Props) => {
+  const router = useRouter()
   return (
     <div className='project-card'>
-      <div className='wireframe-placeholder'>
+      <div className='wireframe-placeholder' onClick={()=> router.push(`/myprojects/${title.toLowerCase().replaceAll(' ', '-')}`)}>
         <img src={src}></img>
       </div>
       <div className='heading-three'>

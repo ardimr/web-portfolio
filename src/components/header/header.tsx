@@ -32,13 +32,13 @@ const Header = () => {
             <img src='/burger-line.svg' width={35} height={35} />
           </li>
           <li className='navbar-link' >
-            <a onClick={()=>smoothScroll('#hero')} href='#hero'>Home</a>
+            <a onClick={()=>smoothScroll('#hero')} href='/#hero'>Home</a>
           </li>
           <li className={navbarLinkClass}>
-            <a onClick={()=>smoothScroll('#about')} href='#about'>About</a>
+            <a onClick={()=>smoothScroll('#about')} href='/#about'>About</a>
           </li>
           <li className={navbarLinkClass}>
-            <a onClick={()=>smoothScroll('#projects') } href='#projects'>Projects</a>
+            <a onClick={()=>smoothScroll('#projects') } href='/#projects'>Projects</a>
           </li>
           <li className={navbarLinkClass}>
             <Button butonType='cta' onClick={()=>smoothScroll('#contact')}>
