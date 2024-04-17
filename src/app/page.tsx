@@ -13,7 +13,7 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
       {/* <MarkdownComponent filepath='/md/sample.md' /> */}
     </>
   )
