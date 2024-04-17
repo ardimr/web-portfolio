@@ -48,10 +48,11 @@ const ProjectCard = ({
               <span className='tooltip'>Visit github</span>
               </a>
             : <a key = {projectLink.uri} href={projectLink.uri} 
-                download={title}
+                // download={title}
                 target="_blank"
                 rel="noreferrer"
               >
+                
                 <img src={projectLink.icon} />
                 <span className='tooltip'>Download the documentation</span>
               </a>
