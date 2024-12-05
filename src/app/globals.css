@@ -84,6 +84,10 @@ footer .container {
     padding: 25px 24px;
     /* background-color: aliceblue; */
   }
+
+  html,body {
+   overflow-x: hidden; 
+  }
 }
 
 @media (min-width:768px) {
