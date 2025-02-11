@@ -25,10 +25,10 @@ export default function RootLayout({
               {`Ardi's Portfolio`}
             </title>
           </Head>
-          <header style={{position:"sticky", width:"100%", top:"0px", backgroundColor:"white", zIndex:"2"}}>
+          <header>
             <Header/>
           </header>
-          <main style={{marginTop:'120px'}}>
+          <main style={{marginTop:'0'}}>
             {children}
           </main>
           <footer>

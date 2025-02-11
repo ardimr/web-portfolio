@@ -17,9 +17,13 @@ const Header = () => {
   const handleToggle = () => {
     console.log(toggle, navbarLinkClass)
     setToggle(!toggle)
-
   }
 
+  const onClickNavbar = (target:string) => {
+    setToggle(false)
+    smoothScroll(target)
+  }
+  
   const navbarLinkClass = toggle? 'navbar-link active': 'navbar-link'
   return (
     <div className='container'>
@@ -31,17 +35,17 @@ const Header = () => {
           <li className='navbar-toggle' onClick={handleToggle}>
             <img src='/burger-line.svg' width={35} height={35} />
           </li>
-          <li className='navbar-link' >
-            <a onClick={()=>smoothScroll('#hero')} href='#hero'>Home</a>
+          <li className={navbarLinkClass} >
+            <a onClick={() => onClickNavbar("#hero")} href='#hero'>Home</a>
           </li>
           <li className={navbarLinkClass}>
-            <a onClick={()=>smoothScroll('#about')} href='#about'>About</a>
+            <a onClick={()=>onClickNavbar("#about")} href='#about'>About</a>
           </li>
           <li className={navbarLinkClass}>
-            <a onClick={()=>smoothScroll('#projects') } href='#projects'>Projects</a>
+            <a onClick={()=>onClickNavbar("#projects") } href='#projects'>Projects</a>
           </li>
           <li className={navbarLinkClass}>
-            <Button butonType='cta' onClick={()=>smoothScroll('#contact')}>
+            <Button butonType='cta' onClick={()=>onClickNavbar("#contact")}>
               Contact
             </Button>
           </li>
