@@ -14,7 +14,7 @@ const Contact = () => {
         <span style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"10px"}}>
           <img src='/location.svg' width={30} height={30} />
           <p>
-            Bandung, Indonesia
+            Jakarta, Indonesia
           </p>
         </span>
         <span style={{display:"flex", flexDirection:"row", alignItems:"center", gap:"10px"}}>
