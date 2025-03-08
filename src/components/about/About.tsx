@@ -57,7 +57,7 @@ const About = () => {
           </p>
           <p>
           {`I'm passionate about leveraging technology to solve real-world problems, and I'm excited to collaborate on projects that align with my areas of expertise. 
-          If you're looking for a dedicated, innovative, and well-rounded engineer and a keen interest in software development, AI, and computer vision, please feel free to get in touch. 
+          If you're looking for a dedicated, innovative, and well-rounded engineer and a keen interest in software development, please feel free to get in touch. 
           I'm always eager to explore new opportunities and challenges.
           `}
           </p>

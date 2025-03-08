@@ -23,8 +23,10 @@ const HeroContent = () => {
         Rizky Ardi Maulana
       </div>
       <Separator/>
-      <p>
-        {`Hello! I'm Ardi👋, a passionate software engineer with a strong focus on backend development and a deep fascination for computer vision technologies. I thrive on turning innovative ideas into functional and user-friendly software solutions. My goal is to make a positive impact on the world through technology.`}
+      <p style={{textAlign:'center'}}>
+        {`Hello! I'm Ardi👋, a passionate software engineer with a strong focus on backend development and a fascination for infrastructure technologies.`} 
+        <br/>
+        {`I thrive on turning innovative ideas into functional and user-friendly software solutions.`}
       </p>
 
       <div className='hero-cta'>

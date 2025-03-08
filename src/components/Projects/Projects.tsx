@@ -35,7 +35,7 @@ const Projects = () => {
         </ProjectCard>
         <ProjectCard 
           src='/train.png' 
-          title='Train Booking System' 
+          title='Manahan Train Booking System' 
           techStacks={[
             {name:"Golang", icon:"golang.svg"},
             {name:"PostgreSQL", icon:"postgresql.svg"},
@@ -50,8 +50,8 @@ const Projects = () => {
             ]
           }>
           <p>
-            {`The Train Booking System is a simple yet powerful application for managing train reservations and bookings. 
-            This application provides an easy and convenient way for users to search for available trains, book tickets, and manage their travel plans.
+            {`Manahan Train Booking System is a simple  application for managing train reservations and bookings. 
+            This application provides features for users to search for available trains, book tickets, and manage their travel plans.
             This application is inspired by KAI's booking system (Indonesian Railways Company).`}
           </p>
         </ProjectCard>
